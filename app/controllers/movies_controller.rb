@@ -8,4 +8,9 @@ class MoviesController < ApplicationController
     @movie = Movie.find(id)  #look up movie by unique ID
     #will render how.html.haml by default
   end
+  
+  def new
+    @movie = Movie.new
+    # default: render 'new' templates
+  end
 end
